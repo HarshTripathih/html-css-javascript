@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+
+<body onload="getText()">
+    <p id="id1">
+        The HyperText Markup Language, or HTML and JavaScript is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+    </p>
+    <p id="id2">
+
+    </p>
+    <!--<button type="button" onclick="getText()">
+Text
+</button>-->
+    <script>
+        function getText() {
+            //Copy the content of one paragraph to another
+            var str1 = document.getElementById('id1').textContent;
+            document.getElementById('id2').innerHTML = str1;
+        }
+    </script>
+</body>
+
+</html>

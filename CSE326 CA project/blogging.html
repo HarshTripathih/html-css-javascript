@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <style>
+        .puretable {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        body {
+            background-image: url(https://img.freepik.com/free-vector/empty-orange-color-studio_272897-267.jpg?size=626&ext=jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        h2 {
+            color: black;
+            font-size: 25px
+        }
+        
+        input {
+            border: 3px solid blue;
+            border-radius: 10px;
+        }
+        
+        input {
+            border: 2 px solid yellow;
+            width: 50%;
+            padding: 5px 40px;
+            border-radius: 5px;
+            color: red;
+            font-size: 20px;
+        }
+        
+        fieldset {
+            margin: auto;
+            border: 5px solid black;
+        }
+        
+        h1 {
+            color: darkviolet;
+            font-size: 40px;
+        }
+        
+        button {
+            background-color: purple;
+            font-size: 20px;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .button:hover {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var g = document.forms["myForm"]["gender"].value;
+            if (g == "") {
+                alert("Gender must be fill out!");
+                return false;
+            } else {
+                alert("Your Response saved successfully!");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <fieldset>
+        <legend allign="center">
+            <h1>BLOG</h1>
+        </legend>
+        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+            <br><br><br>
+            <table table ID="id1" class="puretable">
+                <tbody>
+                    <tr>
+                        <td allign="center">
+                            <h2>TITLE</h2>
+                        </td>
+                        <td><input type="text" placeholder="ABCD" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>NAME</h2>
+                        </td>
+                        <td><input type="text" placeholder="abc" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>AGE</h2>
+                        </td>
+                        <td><input type=" number" placeholder="00" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>DAY</h2>
+                        </td>
+                        <td><input type="day" placeholder="day" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>DATE</h2>
+                        </td>
+                        <td><input type="date" placeholder="dd-mm-yy" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>GMAIL</h2>
+                        </td>
+                        <td><input type="email" placeholder="abc@xyz.com" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>CONTACT NO.</h2>
+                        </td>
+                        <td><input type="tel" placeholder="+91-123-456-789" required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>GENDER</h2>
+                        </td>
+                        <td>
+                            <h3><input type="radio" value="Male" name="gender">MALE<input type="radio" value="Female" name="gender">Female</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button class="button" input type="submit" value="SUBMIT">SUBMIT</button></td>
+                        <td><button class="button" input type="reset" value="RESET" onclick="reset">RESET</button></td><br>
+                        <td><button class="button" input type="reset" onclick="window.location.href = 'create own blog 2.html';">BACK</button></td>
+                        <td><button class="button" input type="reset" onclick="window.location.href = 'blog channel3.html';">NEXT</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+    </fieldset>
+</body>
+
+</html>

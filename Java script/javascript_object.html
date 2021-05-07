@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Objects
+</title>
+</head>
+<body>
+<script>
+var Student={firstName:"Goutam",lastName:"Majumder",age:34,jod:"teaching",
+/*Furctions inside the object of a javascript will
+be considered as a property
+*/
+salary:function(){
+var basic = 1000;
+var da = 500;
+return basic*da;
+},
+fullName:function(){
+return this.firstName +' '+this.lastName;
+}
+};
+/*do not frefer this method to display the data on html page using onclick event .
+then all other controls wiil be removed from the page.prefer this method only for debugging
+the website.firstName
+
+only prfer:
+alert();
+data();*/
+document.write(Student.firstName+' ');
+document.write(Student.lastName+' ');
+document.write(Student.salary());
+document.write(Student.fullName());
+</script>
+<button type="button">
+Here I am!
+</button>
+</body>
+</html>
+

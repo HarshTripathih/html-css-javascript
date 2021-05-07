@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 2px solid black;
+    background-color: lightgrey;
+    width: 20em;
+    height: 20em;
+    margin-top: -9em;
+    margin-left: -12em;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-columns: 5em auto;
+    }
+    .text1{
+    grid-column: 1/ span 3;
+    }
+    
+
+.ope{
+    width: 5em;
+    height: 3em;
+    background-color: lightskyblue;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px solid black;
+    }
+    .ope:hover{
+        background-color :blueviolet; /* Green */
+        color: white;
+        }
+    .ope2{
+        width: 5em;
+        height: 2.95em;
+        background-color: lightskyblue;
+        color: white;
+        font-size: 15px;
+        text-decoration: double;
+        border-radius: 2px solid black;
+        }
+         
+        .ope2:hover{
+            background-color :blueviolet; /* Green */
+            color: white;
+            }
+        .Digits{
+            width: 5em;
+            height: 5em;
+            background-color: lightskyblue;
+            color: white;
+            font-size: 15px;
+            border-radius: 2px solid black;
+            transition-duration: 0.10s;
+            }
+            
+            .Digits:hover{
+                background-color : grey; /* Green */
+                color: white;
+                }
+                .last{
+                    grid-column: 1/span 2;
+                    }
+                    .clear{
+                        width:60px;
+                        height: 40px;
+                        background-color: lightskyblue;
+                        color: white;
+                        font-size: 15px;
+                        }
+
+/* style for text box*/
+input[type=text],select{
+    text-align: right;
+    width: 100%;
+    margin: 4px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    color: red;
+    }

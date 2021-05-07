@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Tables with CSS
+</title>
+<style>
+.center{
+margin-left: auto;
+margin-right: auto;
+}
+#id1,#id1 th, #id1 td{
+color: blueviolet;
+/*border: 2px solid green;*/
+/*
+separate is the default value for border-collapse
+*/
+border-collapse: collapse;
+width: auto;
+padding: 10px;
+text-align: center;
+border-style:dotted;
+/*background-color: lightcoral;*/
+}
+#id1 th{
+border-top: 2px solid black;
+height: 50px;
+background-color: lightblue;
+}
+#id1{
+box-shadow: 0 0 10px red;
+}
+#id1 td{
+color:black;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+/*
+default value will be center
+*/
+vertical-align: top;
+}
+caption{
+caption-side: top;
+}
+
+tr:nth-child(even){
+background-color: lightblue;
+}
+tr:nth-child(odd){
+background-color: blanchedalmond;
+}
+tr:hover{
+background-color: lightsalmon;
+}
+</style>
+</head>
+<body>
+<table ID="id1" class="center">
+<caption>
+Details of the Students
+</caption>
+<thead>
+<tr>
+<th>Sl. No.</th>
+<th>Name</th>
+<th>Section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Rahul</td>
+<td>K20KT</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Shivam</td>
+<td>K20RB</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Smita</td>
+<td>K20RG
+<br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque accusantium ipsa beatae aut ipsam, et eligendi veritatis rem accusamus nihil molestias amet consectetur ex eius atque possimus nostrum odit velit ratione animi harum quis quas reiciendis? Quia delectus, natus cumque enim, quae a, voluptate molestias consectetur excepturi iste illo!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque saepe impedit unde nostrum, facere a beatae blanditiis veniam voluptates, molestias placeat ipsam eum ullam ut nesciunt necessitatibus praesentium distinctio perferendis voluptate quaerat sed, aut voluptatibus! Illum eos atque saepe vitae earum error necessitatibus, soluta optio perspiciatis consequatur perferendis, iure ab.
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

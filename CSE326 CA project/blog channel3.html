@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<style>
+    body {
+        background-image: url(https://images.unsplash.com/photo-1478428036186-d435e23988ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMTEyODQ1fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
+        background-repeat: no repeat;
+        background-size: cover;
+        background-attachment: fixed
+    }
+    
+    textarea {
+        font-size: 20px;
+        font-family: didot;
+        color: darkViolet;
+    }
+    
+    input {
+        border: 3px solid purple;
+        border-radius: 10px;
+        font-size: 20px;
+        color: maroon;
+    }
+    
+    h1 {
+        color: orangered;
+    }
+    
+    button {
+        background-color: purple;
+        font-size: 25px;
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+        right: 80px;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        background-color: yellow;
+        color: black;
+    }
+    
+    textarea {
+        border-radius: 15px;
+        border: 3px solid yellow;
+        font-size: 30px;
+    }
+    
+    h4 {
+        font-size: 40px;
+        color: aqua;
+    }
+    
+    fieldset {
+        border: 5px solid black;
+    }
+</style>
+<script>
+    function blogform() {
+        alert("Your Response saved successfully now you can click the 'Home Button'!");
+    }
+</script>
+
+<body>
+    <fieldset>
+        <table>
+
+            <legend allign="center" ;>
+                <h1>BLOG</h1>
+            </legend>
+            <form name="myForm" action="" onsubmit="return blogform()" method="post">
+                <center><input type="text" placeholder="BLOG NAME" style="height:50px; width:250px;"></center>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="DAY" style="height:30px; width:150px;"></td>
+                        <td><input type="text" placeholder="DATE" style="height:30px; width:150px;"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <td>
+                        <h4>
+                            <UL>ATTACH IMAGES
+                                <UL>
+                        </h4>
+                    </td>
+                    <TR>
+                        <td><input type="image" placeholder="IMAGE" src="media" style="height:200px; width:300px; background-color: magenta;"></td>
+                        <td><textarea name="Experience" rows="10" cols="10" placeholder="BLOG POST 1" style="height:200px; width:600px; margin:30px; background-color:lavender;"></textarea></td>
+                        <td><textarea name="Experience" placeholder="ABOUT ME" style="height:200px; width:200px; margin:40px; background-color:lavenderBlush;" rows="10" cols="10"></textarea></td>
+                    </TR>
+
+
+                    <tr>
+                        <td><input type="image" placeholder="IMAGE" src="media" style="height:200px; width:300px; background-color:violet;"></td>
+                        <td><textarea name="Experience" rows="10" cols="10" placeholder="BLOG POST 2" style="height:200px; width:600px; margin:30px; background-color: lavender;"></textarea></td>
+                        <td><textarea name="Experience" rows="10" cols="10" placeholder="BLOG ARCHIVE" style="height:165px; width:300px; margin:40px;  background-color: aquamarine;"></textarea>
+                    </tr>
+
+                    <tr>
+                        <td><input type="image" placeholder="IMAGE" src="media" style="height:200px; width:300px; background-color: palevioletred;"></td>
+                        <td><textarea name="Experience" rows="10" cols="10" placeholder="BLOG POST 3" style="height:200px; width:600px; margin:30px; background-color: lavender;"></textarea></td>
+                        <td><textarea name="Experience" rows="10" cols="10" placeholder="ADD GADGET" style="height:165px; width:300px; margin:40px; background-color: cyan;"></textarea>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <H2>THOUGHTS</H2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><textarea name="Experience" rows="10" cols="10" placeholder="THOUGHTS" style="height:200px; width:200px;"></textarea></td>
+                        <td><button class="button" input type="SUBMIT" value="Submit" ;>SUBMIT</button></td>
+                        <td><button class="button" input type="reset" onclick="window.location.href = 'Front_page.html';" value="HOME" ;>HOME</button></td>
+                        <td><button class="button" input type="reset" onclick="window.location.href = 'blogging.html';" value="HOME" ;>PREVIOUS</button></td>
+                    </tr>
+                </tbody>
+        </table>
+        </form>
+    </fieldset>
+</body>
+
+</html>

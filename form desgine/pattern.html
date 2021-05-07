@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+
+<body>
+    <p id="para1">
+    </p>
+    <p id="para2">
+
+    </p>
+    <button type="button" onclick="setText()">
+Add Text
+</button>
+
+    <script>
+        function setText() {
+            let str = "We are in class and working with HTML and CSS."
+                /*
+                length - property can be used to get the length of a string
+                */
+                /* document.getElementById('para1').innerHTML = str + "<br>" + "have " + str.length + " characters";
+                 //document.getElementById('para2').innerHTML = searchText(str);
+
+                 //searching the first and last occurance
+                 /*var firstIndex = str.indexOf("and");
+                 var lastIndex = str.lastIndexOf("and");
+                 alert('First index: ' + firstIndex + "\n" + 'Last index ' + lastIndex);
+                */
+
+            //case-insensitive search  pattern matching
+
+            /*var n = str.match(/AND/i);
+            alert(n);*/
+
+            //case sensitive with all accurance
+            /* var n = str.match(/and/g); //g = global
+             alert(n);*/
+
+            //replace string property
+
+            /*str = str.replace(/and/g, "or");
+            alert(str);*/
+
+            //copy the conetent of one paragraph to another paragraph
+
+
+
+
+
+
+
+        }
+        /*function searchText(str){
+        var str2 = str.search("working");
+        return str2;
+        }*/
+    </script>
+</body>
+
+</html>

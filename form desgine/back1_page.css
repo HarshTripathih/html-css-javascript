@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: cover;
+    margin: cover;
+    border: 2px solid black;
+    height: 1600px;
+    display: grid;
+    grid-template-rows: 600px 600px 600px 65px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: lightgreen;
+}
+
+.blog1 {
+    Background-image: url();
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+}
+
+.blog1:hover {
+    /*background-color: red;*/
+    color: yellow;
+}
+
+.blog2 {
+    Background-color: #5e8000;
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+}
+
+.blog2:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.blog3 {
+    Background-color: grey;
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+}
+
+.blog3:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.blog4 {
+    Background-color: rgb(0, 255, 106);
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+}
+
+.blog4:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.blog5 {
+    Background-color: rgb(248, 159, 214);
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+}
+
+.blog5:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.blog6 {
+    Background-color: yellow;
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+}
+
+.blog6:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.blog7 {
+    Background-color: rgb(97, 97, 95);
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+}
+
+.blog7:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.blog8 {
+    Background-color: rgb(0, 247, 255);
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+}
+
+.blog8:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.blog9 {
+    Background-color: rgb(56, 209, 89);
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+}
+
+.blog9:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.blog10 {
+    background-color: plum;
+    grid-column: 1/4;
+}
+
+p {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+p:hover {
+    color: white;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px 10px;
+    left: 88%;
+    bottom: -1px;
+}
+
+.button:hover {
+    background-color: yellow;
+    color: black;
+}

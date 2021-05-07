@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Forms</title>
+</head>
+<body>
+<form action="1_html_forms.html" method="">
+<h1>Textbox</h1>
+<label for="txtFname">First Name</label>
+<input type="text" id="txtFname" name="Name" value="Rahul">
+
+<h1>Radio Buttons</h1>
+<input type="radio" id="radioMale" name="gender" value="male">
+<label for="radioMale">Male</label>
+<br>
+<input type="radio" id="radioFemale" name="gender" value="female">
+<label for="radioFemale">Female</label>
+<br>
+<input type="radio" id="radioOthers" name="gender" value="others">
+<label for="radioOthers">Others</label>
+
+<h1>Checckbox</h1>
+<input type="checkbox" id="chkCar" name="vehical1" value="Car">
+<label for="chkCar">Car</label>
+<input type="checkbox" id="chkByke" name="vehical2" value="Byke">
+<label for="chkByke">Byke</label>
+<input type="checkbox" id="chkBoat" name="vehical3" value="Boat">
+<label for="chkBoat">Boat</label>
+
+<h1>List Items</h1>
+<label for="lstColors">Select Color</label>
+<select name="colors" id="lstColors">
+<option value="green">Green</option>
+<option value="yellow">Yellow</option>
+<option value="blue">Blue</option>
+<option value="red">Red</option>
+<option value="black">Black</option>
+</select>
+<br>
+<br>
+<h1>List with Multiple Selection</h1>
+<label for="lstSubjects">Subjects</label>
+<select name="subjects" id="lstSubjects" multiple>
+<option value="Mathmetics">Mathmetics</option>
+<option value="CPP">CPP</option>
+<option value="HTML">HTML</option>
+<option value="CSS">CSS</option>
+</select>
+
+<h1>List with default selected item</h1>
+<label for="lstDefaultColors">Default colors</label>
+<select name="FavColor" id="lstdDefaultsColors"multiple>
+<option value="red">Red</options>
+</select>
+
+<h1>list displaying two items</h1>
+<label for="listfooditems">FoodItems</label>
+<select name="fooditems" id="lstFoodItems" size="2" multiple>
+<option value="Snacks">Snacks</option>
+<option value="icecream">icecream</option>
+<option value="momos">momos</option>
+<option value="pizza">pizza</option>
+</select>
+
+<h1>Text Area</h1>
+<label for="txtmessage">Anymessage</label>
+<textarea name="Message" id="textmessage" cols="30" rows="5" maxlength="50"></textarea>
+
+<h1>Alert type button</h1>
+<button type="button" onclick="alert('Every thing is fine')">Validate</button>
+<br>
+<br>
+<input type="submit" value="Click Me">
+</form>
+</body>
+</html>

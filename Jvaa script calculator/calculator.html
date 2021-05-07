@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CALCULATOR</title>
+<link rel="stylesheet" href="calculator.css">
+<script src="calculator.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="text1">
+        <input id="res" type="text" width="100%">
+        </div>
+<div class="opediv">
+    <button type="button" class="ope" onclick="setValue('+')">+</button>
+    <button type="button" class="ope2" onclick="setValue('-')">-</button>
+    <button type="button" class="ope2" onclick="setValue('*')">*</button>
+    <button type="button" class="ope2" onclick="setValue('/')">/</button><br>
+    <button type="button" class="ope" onclick="solve()">=</button>
+</div>
+
+<div class="num">
+    <button type="button" class="Digits" onclick="setValue(1)">1</button>
+<button type="button" class="Digits" onclick="setValue(2)">2</button>
+<button type="button" class="Digits" onclick="setValue(3)">3</button>
+<br>
+
+<button type="button" class="Digits" onclick="setValue(4)">4</button>
+<button type="button" class="Digits" onclick="setValue(5)">5</button>
+<button type="button" class="Digits" onclick="setValue(6)">6</button>
+<br>
+
+
+<button type="button" class="Digits" onclick="setValue(7)">7</button>
+<button type="button" class="Digits" onclick="setValue(8)">8</button>
+<button type="button" class="Digits" onclick="setValue(9)">9</button>
+</div>
+
+<div class="last">
+    <button type="button" class="clear" onclick="getPercentage()">%</button>
+<button type="button" class="clear" onclick="setValue('**')">a^b</button>
+<button type="button" class="clear" onclick="clearRes()">C</button>
+<button type="button" class="clear" onclick="setValue('.')">.</button>
+<button type="button" class="clear" onclick="setValue(0)">0</button>
+</div>
+
+</div>
+<p id="para1">
+
+</p>
+
+</body>
+</html>

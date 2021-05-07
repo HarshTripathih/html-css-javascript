@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+<!--
+How to write the content to html file using javascript
+a) form control
+b) html element
+implementation - using internal javascript
+-->
+<head>
+<title>
+Simple JavaScript
+</title>
+<script>
+function changeColor(){
+/*
+Changing the style of an html element
+*/
+document.getElementById('para1').style="background-color: red;";
+}
+</script>
+</head>
+<body>
+<h1>Changing the Content of an HTML Element</h1>
+<p id="id1">
+This is a paragraph!
+</p>
+<button type="button"
+onclick="document.getElementById('id1').innerHTML='We are here!'">
+Click Me!
+</button>
+<h1>
+Changing the content of a form control
+</h1>
+<form action="">
+<input type="text" id="text1" name="text1">
+<button type="button"
+onclick="document.getElementById('text1').value='Goutam'">
+Click me!
+</button>
+
+</form>
+
+<!--
+Taking your name as input and print it to the textbox
+Implementation:
+1. JavaScript Function
+2. take input
+3. save the value, we need some varibale
+4. assigne the value
+5. Button onclick event
+-->
+<label id="label1">
+
+</label>
+<h1> Change the paragraph back color</h1>
+<script>
+var name;
+name = prompt('Enter your name');
+document.getElementById('label1').innerHTML = "Name:"+name;
+</script>
+<p id="para1" onclick="changeColor()">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ipsa sint repellendus cupiditate enim? Ipsa delectus odit recusandae quidem dolorum! Doloremque ut, odit debitis corrupti consequuntur ipsum distinctio beatae veritatis reiciendis iusto quisquam blanditiis optio, deserunt neque placeat animi suscipit rem. Nihil enim fuga labore reiciendis, praesentium laboriosam. Esse deleniti obcaecati harum facilis quasi asperiores et debitis, inventore qui, animi rerum sequi? Accusamus sequi praesentium, sunt iusto illo animi sit esse eligendi in dolorum quidem, ipsum repellendus, hic velit. Eaque, optio eius. Doloremque delectus omnis possimus fugiat eum dolore nisi in voluptatibus a, facilis magni incidunt sit et tempore! Perferendis!
+</p>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<style>
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    body {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Ztd6lXJBQrcG5zju0Qt-t7UZD_jl-u6Pvw&usqp=CAU);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    button {
+        background-color: purple;
+        font-size: 20px;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 40px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        background-color: yellow;
+        color: black;
+    }
+    
+    textarea {
+        border: solid black;
+    }
+    
+    fieldset {
+        border: 3px solid black;
+    }
+    
+    input {
+        border: 2 px solid yellow;
+        width: 30%;
+        padding: 10px 40px;
+        border-radius: 10px;
+        color: red;
+        font-size: 15px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+</style>
+<script>
+    function validateForm() {
+        alert("Your Response saved successfully!");
+    }
+</script>
+
+<body>
+    <fieldset>
+        <legend allign="center">
+            <h1>Article</h1>
+        </legend>
+        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+            <table table ID="id1" class="center">
+                <tr>
+                    <td allign="centre">
+                        <h3>Topic</h3>
+                    </td>
+                    <td><input type="text" placeholder="Topic" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>By:</h3>
+                    </td>
+                    <td><input type="text" placeholder="Name" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Day</h3>
+                    </td>
+                    <td><input type="day" placeholder="Day" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Date</h3>
+                    </td>
+                    <td><input type="date" placeholder="Date" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Body:-</h3>
+                    </td>
+                    <td><textarea name="Experience" rows="10" cols="100" placeholder="Body"> </textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Conclusion:-</h3>
+                    </td>
+                    <td><textarea name="Experience" rows="6" cols="100" placeholder="Conclusion"> </textarea></td>
+                </tr>
+                <tr>
+                    <td><button class="button" input type="submit" value="SUBMIT" onclick="submit">SUBMIT</button></td>
+                    <td><button class="button" input type="reset" value="RESET" onclick="reset">RESET</button></td><br>
+                    <td><button class="button" input type="reset" onclick="window.location.href = 'Front_page.html';">PREVIOUS</button></td>
+                </tr>
+
+            </table>
+        </form>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Registration form</title>
+    <script src="validation.js">
+    </script>
+
+</head>
+
+
+<body>
+    <form name="form1" action="page1.html" method="POST" onsubmit="return validateData()">
+        <input type="text" id="fname" name="txtfname">
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <p id="para1" style="display: none;">
+
+    </p>
+    <input id="num" value="enter a number" style="color: gainsboro;" onfocus="clearText()" onfocusout="setText()">
+    <button type="button" onclick="checkNum()">
+Check
+</button>
+    <br><br> /**default java script */
+    <form action="page1.html" method="POST">
+        <h3>Maximum 5 characters are allowed</h3>
+        <input type="text" name="lname" maxlength="5" required>
+        <input type="text" name="pin" value="799002" disabled size="6">
+        <br>
+        <br> Age:
+        <input type="number" min="10" max="20">
+        <br><br> Password <input type="password" minlength="8">
+        <input type="submit" value="Submit">
+    </form>
+
+
+    //Regular Expression//
+
+
+
+
+
+    <table>
+        <table ID="id1" class="center">
+            <caption>
+                Details of the Students
+            </caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><label for="txtFname">First Name</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="txtFname" name="Name" value="Harsh"></td>
+                </tr>
+                <tr>
+                    <td><label for="textname">Last Name</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="txtFname" name="Name" value="Tripathi"></td>
+                </tr>
+                <tr>
+                    <td><label for="txtFname">Gender</td>
+                    <td>:</td>
+                    <td><input type="radio" id="radioMale" name="gender" value="male">
+                        <label for="radioMale">Male</label>
+                        <br>
+                        <input type="radio" id="radioFemale" name="gender" value="female">
+                        <label for="radioFemale">Female</label>
+                        <br>
+                        <input type="radio" id="radioOthers" name="gender" value="others">
+                        <label for="radioOthers">Others</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+
+</html>

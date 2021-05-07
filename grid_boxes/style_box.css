@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    .main{
+    width:90%;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid blue;
+    background-color: darkorange;
+    display: grid;
+    /*
+    grid = 2 (rows) X 3 (colums).
+    */
+    /*Specifying the height of each rows as a
+    space separated values*/
+    grid-template-rows:150px 150px;
+    /*
+    column width auto will make the items with equal width
+    */
+    /*grid-template-columns: auto auto auto;*/
+    /*
+    fr = fractional
+    */
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    /*
+    shorthand method: repeat()
+    */
+    grid-template-columns: repeat(3,1fr);
+    
+    /*
+    making gaps between the columns and rows of the grid
+    */
+    grid-row-gap:10px;
+    grid-column-gap:10px;
+    gap:10px;/*this property is used to set the gaps b/w the rows and column of grids*/
+    }
+    
+    .div1{
+    background-color: lightblue;
+    }
+    .div2{
+    background-color: lightcoral;
+    }
+    .div3{
+    background-color: lightcyan;
+    }
+    .div4{
+    background-color: lightgreen;
+    }
+    .div5{
+    background-color: lightgoldenrodyellow;
+    }
+    .div6{
+    background-color: lightpink;
+    }

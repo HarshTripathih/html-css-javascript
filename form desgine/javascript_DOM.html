@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+
+<body onload="getElements()">
+    <p>
+
+    </p>
+
+    <p>
+
+    </p>
+
+    <p id>
+
+    </p>
+    <button id="btn1" type="button" onclick="changeButton()">yes</button>
+
+    <script>
+        var num = document.getElementsByTagName('p');
+        alert(num.length);
+        num[0].innerHTML = "hello";
+        num[1].innerHTML = "world";
+
+        function changeButton() {
+            var name = document.getElementById('btn1').textContent;
+            if (name == 'yes') {
+                document.getElementById('btn1').textContent = "No";
+            } else {
+
+                document.getElementById('btn1').textContent = "yes";
+            }
+        }
+
+
+        /* Get the complete structure of the bode element of the html page:-
+        1) 
+        
+        */
+        function getElements() {
+            var elements = document.body.childNodes;
+            var text = "";
+            for (let i = 0; i < elements.length; i++) {
+                text += elements[i].nodeName + "<br>";
+            }
+            num[2].innerHTML = text;
+        }
+    </script>
+
+
+
+</body>
+
+</html>

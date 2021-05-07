@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+
+<body onload="getText()">
+    <p id="id1">
+        The HyperText Markup Language, or HTML 124 and JavaScript is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+    </p>
+    <p id="id2">
+
+    </p>
+    <!--<button type="button" onclick="getText()">
+Text
+</button>-->
+    <script>
+        function getText() {
+            //Copy the content of one paragraph to another
+            var str1 = document.getElementById('id1').textContent;
+            //document.getElementById('id2').innerHTML = str1.slice(20, 40);
+            //document.getElementById('id2').innerHTML = str1.substring(20, 30);
+            // document.getElementById('id2').innerHTML = str1.substr(20, 30);
+
+            // document.getElementById('id2').innerHTML = str1.toUpperCase();//for wtriting upper case
+
+            /*var name = "      harsh Tripathi          ";  // for trimming the allert message
+            alert(name.trim());*/
+
+
+
+            //pattern matching for
+            // var matchpattern = str1.match(/[1-4]/);
+            //document.getElementById('id2').innerHTML = matchpattern;
+
+            //upper case ,lower case  and digits 
+            /*var matchpattern = str1.match(/[a-z,A-Z,0-9]/);
+            document.getElementById('id2').innerHTML = matchpattern;*/
+
+            // ORing for pattern matching
+            var matchpattern = str1.match(/(is | such)/i);
+            document.getElementById('id2').innerHTML = matchpattern;
+        }
+    </script>
+</body>
+
+</html>
